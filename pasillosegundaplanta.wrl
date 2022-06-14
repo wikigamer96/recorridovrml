@@ -1,0 +1,102 @@
+#VRML V2.0 utf8
+
+##vistageneral
+Transform {				 
+	children [
+DEF camera1 Viewpoint {
+	position 0 0 25
+	description	"Camara1 General"
+	jump FALSE			   
+	
+}		]}
+Transform {	 translation -5 0 0
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					url	"papel tapiz pasillos.jpg"
+				
+				}}
+
+				geometry Box {
+					size 1 10 35}
+		}
+	]}
+	Transform {	 translation 5 0 0
+	children [
+		Shape {
+			appearance Appearance {
+					texture ImageTexture {
+					url	"papel tapiz pasillos.jpg"
+				}}
+
+				geometry Box {
+				size 1 10 35}
+		}			
+	]}
+
+Transform {	 translation 0 -5 0
+	children [
+		Shape {
+			appearance Appearance {
+					texture ImageTexture {
+					url	"maderapiso.jpg"
+				}}
+
+				geometry Box {
+				size 10 1 35}
+		}
+	]}
+
+	Anchor {
+		children [
+Transform {	 translation 0 0 -15
+	children [
+		Shape {
+			appearance Appearance {
+					texture ImageTexture {
+					url	"escaleras.jpg"
+				}}
+
+				geometry Box {
+				size 10 10 1}
+		}
+	]}		]
+url	"pasillosegundaplanta.wrl"
+}
+
+
+##puertahabitaciondavid
+	Anchor {
+		children [
+Transform {
+	translation	-4.5 0 15
+	children [
+		Shape {
+			appearance Appearance {
+				texture	ImageTexture {
+				url	"puertatexture.jpg"
+				}}
+				geometry Box {
+					size 0.4 8 4
+				
+				}		 }]}   ]
+				url	"habitacion_2dopiso_partedavid.WRL"}
+
+##puerta a habitacion1
+
+	Anchor {
+		children [
+Transform {
+	translation	4.5 0 15
+	children [
+		Shape {
+			appearance Appearance {
+				texture	ImageTexture {
+				url	"puertatexture.jpg"
+				}}
+				geometry Box {
+					size 0.4 8 4
+				
+				}		 }]}   ]
+				url	"GYM_partedekatia.wrl"}

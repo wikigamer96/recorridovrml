@@ -1,0 +1,449 @@
+#VRML V2.0 utf8
+##vistageneral
+Transform {				 
+	children [
+DEF camera1 Viewpoint {
+	position 19 3 -5
+	description	"Camara1 General"
+	jump FALSE
+	orientation	0 1 0 1.57
+	
+}		]}
+##vista a puertapasillo
+Transform {				 
+	children [
+DEF camera5 Viewpoint {
+	position -4 3 -5
+	description	"Camara1 General"
+	jump FALSE
+	orientation	0 1 0 -1.57
+}]}
+##piso
+Transform{
+	translation	0 -2 -5
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					url	"maderapiso.jpg"
+				}}
+			
+				geometry Box {
+				size 40 0.1 30}}
+			]}
+##paredes
+Transform {
+	translation	0 3 -20 
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .34 .39 .54
+					specularColor .23 .27 .37
+					emissiveColor .18 .22 .3
+					ambientIntensity .0767
+					shininess .15
+				}}
+				geometry Box {
+					size 40 10 1 }}
+				]}
+Transform {
+	translation	0 3 10 
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .34 .39 .54
+					specularColor .23 .27 .37
+					emissiveColor .18 .22 .3
+					ambientIntensity .0767
+					shininess .15
+				}}
+				geometry Box {
+					size 40 10 1 }}
+				]}
+Transform {
+	translation	20 3 -5 
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .34 .39 .54
+					specularColor .23 .27 .37
+					emissiveColor .18 .22 .3
+					ambientIntensity .0767
+					shininess .15
+				}}
+				geometry Box {
+					size 1 10 30 }}
+				]}
+Transform {
+	translation	-20 7.5 -5 
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .34 .39 .54
+					specularColor .23 .27 .37
+					emissiveColor .18 .22 .3
+					ambientIntensity .0767
+					shininess .15
+				}}
+				geometry Box {
+					size 1 1 30 }}
+				]}
+				Transform {
+	translation	-20 3 -5 
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					ambientIntensity 0
+					shininess 0
+					transparency .431
+				}}
+				geometry Box {
+					size 0.5 10 30 }}
+				]}
+				Transform {
+	translation	-20 3 5 
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .34 .39 .54
+					specularColor .23 .27 .37
+					emissiveColor .18 .22 .3
+					ambientIntensity .0767
+					shininess .15
+				}}
+				geometry Box {
+					size 1 10 1 }}
+				]}
+				Transform {
+	translation	-20 3 -5 
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .34 .39 .54
+					specularColor .23 .27 .37
+					emissiveColor .18 .22 .3
+					ambientIntensity .0767
+					shininess .15
+				}}
+				geometry Box {
+					size 1 10 1 }}
+				]}
+					Transform {
+	translation	-20 3 -15 
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .34 .39 .54
+					specularColor .23 .27 .37
+					emissiveColor .18 .22 .3
+					ambientIntensity .0767
+					shininess .15
+				}}
+				geometry Box {
+					size 1 10 1 }}
+				]}
+##ESCRITORIO
+Transform {
+	translation	6 1 8
+	children [
+Transform {
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor .76 1 1
+					emissiveColor .07 .1 .1
+					ambientIntensity 0
+					shininess 0
+				}}
+
+				geometry Box {
+				size 5 0.3 2.5}
+		}
+	]}
+
+	Transform {	  translation -2.3 -1.5 0.9
+		children [
+			Shape {
+		appearance Appearance {
+				material Material {
+					diffuseColor .76 1 1
+					emissiveColor .07 .1 .1
+					ambientIntensity 0
+					shininess 0
+				}}
+				geometry Cylinder {
+				height 3 radius	0.1
+			}
+
+			}
+		]
+	
+	} 
+	Transform {	  translation -2.3 -1.5 -0.9
+		children [
+			Shape {
+		appearance Appearance {
+				material Material {
+					diffuseColor .76 1 1
+					emissiveColor .07 .1 .1
+					ambientIntensity 0
+					shininess 0
+				}}
+				geometry Cylinder {
+				height 3 radius	0.1
+			}
+
+			}
+		]
+	
+	} 
+	Transform {	  translation 2.3 -1.5 -0.9
+		children [
+			Shape {
+		appearance Appearance {
+				material Material {
+					diffuseColor .76 1 1
+					emissiveColor .07 .1 .1
+					ambientIntensity 0
+					shininess 0
+				}}
+				geometry Cylinder {
+				height 3 radius	0.1
+			}
+
+			}
+		]
+	
+	} 
+		Transform {	  translation 2.3 -1.5 0.9
+		children [
+			Shape {
+		appearance Appearance {
+				material Material {
+					diffuseColor .76 1 1
+					emissiveColor .07 .1 .1
+					ambientIntensity 0
+					shininess 0
+				}}
+				geometry Cylinder {
+				height 3 radius	0.1
+			}
+
+			}
+		]
+	
+	}
+]}
+
+#silla
+Transform {	
+	translation	6 -1 6
+	scale 0.2 0.3 0.2
+	rotation 0 1 0 -1.57
+	children [
+
+	##	silla1
+	Transform {
+	translation	-4 4 -4
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					url	"maderasilla.jpg"
+					
+				}}
+				geometry Cylinder {
+					radius 1
+				height 14}}
+				]}
+
+Transform {
+	translation	-4 4 4
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					url	"maderasilla.jpg"
+					
+				}}
+				geometry Cylinder {
+					radius 1
+				height 14}}
+				]}
+				Transform {
+	translation	4 0 -4
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					url	"maderasilla.jpg"
+					
+				}}
+				geometry Cylinder {
+					radius 1
+				height 6}}
+				]}
+				Transform {
+	translation	4 0 4
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					url	"maderasilla.jpg"
+					
+				}}
+				geometry Cylinder {
+					radius 1
+				height 6}}
+				]}
+
+
+				Transform {
+	translation	0 3 0
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					url	"maderasilla.jpg"
+					
+				}}
+				geometry Box {
+					size 10 1 10
+					}}
+				]}
+
+
+					Transform {
+	translation	-3 9 0
+	children [
+		Shape {
+			appearance Appearance {
+				texture ImageTexture {
+					url	"maderasilla.jpg"
+					
+				}}
+				geometry Box {
+					size 1 6 10
+					}}
+				]}
+
+			]}
+
+
+
+
+##ropero
+
+Transform {	 translation -3 2 -18
+	children [
+		Shape {
+			appearance Appearance {
+			
+			texture ImageTexture { url "ropero__.jpg"
+				
+				}}
+
+				geometry Box {
+				size   4 9 2 }
+		}
+	]}
+
+##maceta1
+
+
+				Transform {
+					translation	1 -2 7.
+	children [
+  Transform {
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {		
+					ambientIntensity 0
+					shininess 0
+				}
+			}
+			geometry Extrusion {
+				crossSection [
+					#x #z
+					0  2
+					1.2 1.7
+					1.7 1
+					2 0
+					1.7  -1
+					1.2  -1.7
+					0  -2
+					-1.2 -1.7
+					-1.7 -1
+					-2 0
+					-1.7 1
+					-1.2 1.7
+					0  2
+				]
+				spine [
+				
+				#x #y #z
+				0  0  0
+				0  2  0 
+			
+			    
+				
+
+				]
+				scale [
+				0.4 0.4
+			    0.8 0.8 
+				
+				
+				
+				1 1
+			]
+				creaseAngle	0.74 
+			}
+		}
+	]
+}
+
+	##arbol
+				
+    			Transform {
+					translation	0 6 0
+					scale 0.03 0.04 0.03
+					children	[
+    			Transform {		  
+    children Billboard {
+    axisOfRotation 0 1 0
+    children Shape {
+    geometry Box { size 140 268 0 }
+    appearance Appearance {
+    texture ImageTexture {
+    url "arbol.png"
+}}}}}				]}
+
+]}
+
+  ##puertaalpasillopricipal
+Anchor {
+	children [
+Transform {
+	translation	19 2 -5
+	children [
+		Shape {
+			appearance Appearance {
+				texture	ImageTexture {
+				url	"puertatexture.jpg"
+				}}
+				geometry Box {
+					size 0.5 8 4
+				
+				}		 }]}  ]
+			url "pasilloplantabaja.wrl"}
